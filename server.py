@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 HOST = os.getenv("MY_MAC_IP")
-PORT = os.getenv("CONN_PORT")
+PORT = int(os.getenv("CONN_PORT"))
 
 with socket.socket( socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind(( HOST, PORT))
