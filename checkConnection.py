@@ -1,4 +1,6 @@
 from dotenv import load_dotenv
 import socket
+import os
 
-print("Successful connection!")
+load_dotenv()
+
